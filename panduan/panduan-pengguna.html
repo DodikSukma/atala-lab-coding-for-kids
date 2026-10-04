@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panduan Atala Lab</title>
+    <style>
+      :root {
+        font-family: Arial, sans-serif;
+        color: #0f172a;
+        background: #f8fafc;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        max-width: 840px;
+        margin: auto;
+        padding: 32px 20px 80px;
+      }
+      header {
+        background: linear-gradient(110deg, #2563eb, #7c3aed);
+        color: white;
+        padding: 36px 20px;
+      }
+      header > div {
+        max-width: 840px;
+        margin: auto;
+      }
+      h1 {
+        font-size: 34px;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 22px;
+        margin-top: 38px;
+      }
+      p,
+      li {
+        line-height: 1.7;
+      }
+      p {
+        color: #475569;
+      }
+      header p {
+        color: #dbeafe;
+      }
+      .card {
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        padding: 20px;
+        margin: 16px 0;
+      }
+      .step {
+        display: inline-grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        background: #dbeafe;
+        color: #1d4ed8;
+        font-weight: bold;
+        margin-right: 8px;
+      }
+      code {
+        background: #e2e8f0;
+        padding: 2px 5px;
+        border-radius: 4px;
+        overflow-wrap: anywhere;
+      }
+      .note {
+        background: #fef9c3;
+        border-left: 4px solid #eab308;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      @media print {
+        header {
+          print-color-adjust: exact;
+        }
+        main {
+          padding-top: 10px;
+        }
+        .card {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Panduan Atala Lab</h1>
+        <p>Petunjuk singkat untuk pemilik, guru, dan pendamping belajar.</p>
+      </div>
+    </header>
+    <main>
+      <div class="card">
+        <h2>Mulai untuk siswa</h2>
+        <p>
+          <span class="step">1</span>Buka aplikasi Atala Lab. Pilih tema
+          <b>Angkasa</b> atau <b>Taman</b> di bagian atas. Tema pilihan
+          tersimpan di browser.
+        </p>
+        <p>
+          <span class="step">2</span>Pilih kartu <b>Bulan 1</b> atau
+          <b>Bulan 2</b>. Empat kartu bulan berikutnya bertanda Segera hadir.
+        </p>
+        <p>
+          <span class="step">3</span>Buka pertemuan sesuai urutan. Baca bagian
+          <b>Kenali</b>, <b>Coba</b>, dan <b>Tantangan</b>.
+        </p>
+        <p>
+          <span class="step">4</span>Di Lab Interaktif, seret blok dari kolom
+          kiri ke susunan program dengan mouse atau sentuh. Seret blok yang
+          sudah ada untuk mengubah urutan. Tombol tambah dan panah tetap bisa
+          dipakai. Ikon tempat sampah menghapus blok. Blok <b>Ulangi</b> dan
+          <b>Jika sentuh bintang</b> berlaku untuk satu blok tepat di bawahnya.
+        </p>
+        <p>
+          <span class="step">5</span>Tekan <b>Jalankan</b> untuk melihat tokoh
+          bergerak. Tekan <b>Hentikan</b> atau <b>Ulang awal</b> untuk mencoba
+          lagi.
+        </p>
+        <p>
+          <span class="step">6</span>Isi nama proyek, lalu tekan
+          <b>Unduh karya HTML</b>. File tunggal itu dapat dibuka dengan klik
+          ganda di browser tanpa internet: animasi akan berjalan, atau tekan
+          <b>Tombol aksi</b> untuk game. Tekan <b>Simpan proyek</b> agar bisa
+          dilanjutkan di perangkat ini. Gunakan <b>Cadangan JSON</b> bila ingin
+          mengimpor kembali ke Atala Lab.
+        </p>
+        <p class="note">
+          <b>Uji file hasil unduhan:</b> buka folder Unduhan, klik ganda file
+          <code>atala-karya-....html</code>, lalu pastikan browser menampilkan
+          judul karya dan tokoh di panggung. Untuk animasi, tokoh mulai bergerak
+          sendiri; untuk game bertombol, tekan <b>Tombol aksi</b>. Coba
+          <b>Ulang dari awal</b> dan <b>Jalankan</b> bila tersedia. Alamat
+          browser seharusnya menunjukkan file lokal, bukan
+          <code>localhost</code>. Ulangi saat internet mati bila ingin
+          memastikan karya benar-benar mandiri.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Untuk guru atau pendamping</h2>
+        <ul>
+          <li>
+            Setiap bulan aktif memiliki empat pertemuan dan satu proyek akhir.
+            Kerjakan satu pertemuan dalam satu sesi bila sesuai dengan kelas.
+          </li>
+          <li>
+            Mintalah siswa mengikuti langkah Susun blok → Jalankan → Simpan
+            karya, membuka <b>Butuh petunjuk?</b> bila perlu, dan menjelaskan
+            pilihannya pada bagian <b>Ceritakan</b>.
+          </li>
+          <li>
+            Untuk melihat hasil yang langsung dimainkan, minta siswa menyerahkan
+            file HTML. Untuk cadangan yang dapat diedit lagi, minta file JSON.
+            Keduanya dapat diunduh dari halaman Proyek Saya.
+          </li>
+          <li>
+            Proyek lokal hanya ada di browser perangkat itu. Jangan menghapus
+            data browser sebelum mengunduh cadangan.
+          </li>
+          <li>
+            Buka <b>Papan Guru</b> untuk menggambar penjelasan. Pilih Pena,
+            Kotak, Lingkaran, Panah, atau Teks. Seret dari titik awal ke akhir
+            untuk menggambar panah ke arah mana pun. Salin screenshot lalu tekan
+            <b>Tempel gambar</b> atau Cmd/Ctrl+V; pilih gambar untuk menyeretnya
+            atau tarik pegangan sudutnya untuk mengubah ukuran. Dengan alat
+            Teks, klik tepat di bagian papan yang diinginkan, ketik, lalu tekan
+            Enter. Klik dua kali teks untuk mengubahnya. Pilih objek lalu tekan
+            Hapus pilihan bila perlu.
+          </li>
+          <li>
+            Tekan <b>Tambah halaman A4</b> di bawah papan untuk melanjutkan
+            catatan ke bawah. Gulir halaman untuk melihat seluruh isi. Tekan
+            <b>Simpan</b> agar semua halaman tersimpan di browser ini; tekan
+            <b>Unduh PDF</b> untuk mendapatkan seluruh halaman dalam satu file.
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Menjalankan aplikasi oleh pemilik</h2>
+        <ol>
+          <li>Pasang Node.js versi 20.9 atau lebih baru dan Make.</li>
+          <li>
+            Di Visual Studio Code, pilih <b>File → Open Folder</b>, lalu buka
+            folder akar <code>atala-lab-coding-for-kids</code>. Buka
+            <b>Terminal → New Terminal</b>.
+          </li>
+          <li>
+            Jalankan <code>make setup</code> sekali, lalu <code>make dev</code>.
+            Terminal kembali siap dipakai karena web dan API berjalan di latar
+            belakang. Buka <code>http://localhost:3000</code> untuk aplikasi dan
+            <code>http://localhost:4000/health</code> untuk status API.
+          </li>
+          <li>
+            Jalankan <code>make status</code> untuk memeriksa layanan,
+            <code>make stop</code> untuk menghentikan keduanya, atau
+            <code>make restart</code> untuk menjalankan ulang. Untuk mode
+            produksi lokal, gunakan <code>make start</code> setelah
+            <code>make stop</code>; perintah itu membangun dan menjalankan kedua
+            layanan di latar belakang.
+          </li>
+          <li>
+            Untuk sinkronisasi, buat proyek Supabase, aktifkan Anonymous
+            Sign-ins, jalankan <code>apps/api/supabase/001_projects.sql</code>,
+            lalu isi contoh env pada <code>apps/web/.env.example</code> dan
+            <code>apps/api/.env.example</code>. Baca README untuk rinciannya.
+          </li>
+        </ol>
+        <p class="note">
+          Tanpa Supabase, latihan dan simpan lokal tetap berfungsi. Log web dan
+          API ada di <code>.local-dev/web.log</code> dan
+          <code>.local-dev/api.log</code>. Jika port sudah dipakai program lain,
+          hentikan program itu sendiri sebelum mencoba lagi. Sinkronisasi tidak
+          boleh dianggap aktif sebelum health API menunjukkan konfigurasi dan
+          penyimpanan nyata berhasil diuji.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Jika ada kendala</h2>
+        <ul>
+          <li>
+            <b>Blok tidak berjalan:</b> pastikan ada blok “Ketika mulai” dan
+            tekan Jalankan.
+          </li>
+          <li>
+            <b>Skor tidak berubah:</b> gerakkan tokoh ke bintang lalu letakkan
+            “Jika sentuh bintang” tepat sebelum “Tambah skor”.
+          </li>
+          <li>
+            <b>Proyek tidak terlihat:</b> periksa browser dan perangkat yang
+            dipakai, atau impor file JSON cadangan.
+          </li>
+          <li>
+            <b>Sinkronisasi gagal:</b> proyek tetap tersimpan lokal; periksa
+            API, env, Anonymous Sign-ins, dan migrasi Supabase.
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "atala-lab",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/api"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @atala/web",
+    "dev:api": "npm run dev -w @atala/api",
+    "build": "npm run build -w @atala/web && npm run build -w @atala/api",
+    "test": "npm run test -w @atala/web && npm run test -w @atala/api"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.9"
+  }
+}
