@@ -1,0 +1,121 @@
+:root {
+  /* Brand & Accent Colors (Atala-first) */
+  --blue: #2563eb;
+  --blue-hover: #1d4ed8;
+  --blue-deep: #1e3a8a;
+  --blue-soft: #dbeafe;
+  --blue-Tint: #eff6ff;
+
+  --purple: #7c3aed;
+  --purple-hover: #6d28d9;
+  --purple-soft: #ede9fe;
+
+  --teal: #0d9488;
+  --teal-soft: #ccfbf1;
+
+  --amber: #d97706;
+  --amber-soft: #fef3c7;
+  --yellow: #facc15;
+  --yellow-soft: #fef9c3;
+
+  --coral: #e11d48;
+  --coral-soft: #ffe4e6;
+
+  --green: #16a34a;
+  --green-soft: #dcfce7;
+
+  /* Semantic States */
+  --status-success-bg: #dcfce7;
+  --status-success-ink: #166534;
+  --status-success-border: #86efac;
+
+  --status-warning-bg: #fef3c7;
+  --status-warning-ink: #92400e;
+  --status-warning-border: #fcd34d;
+
+  --status-danger-bg: #ffe4e6;
+  --status-danger-ink: #9f1239;
+  --status-danger-border: #fda4af;
+
+  --status-info-bg: #eff6ff;
+  --status-info-ink: #1e40af;
+  --status-info-border: #bfdbfe;
+
+  /* Block Category Palette */
+  --block-event: #d9465f;
+  --block-motion: #2563eb;
+  --block-looks: #7c3aed;
+  --block-control: #d97706;
+  --block-variable: #16a34a;
+
+  /* Surfaces, Backgrounds & Borders */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-subtle: #f1f5f9;
+  --surface-muted: #f8faff;
+  --ink: #0f172a;
+  --ink-secondary: #334155;
+  --muted: #475569;
+  --muted-light: #64748b;
+  --line: #e2e8f0;
+  --line-strong: #cbd5e1;
+
+  /* Border Radius */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 2px 6px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 6px 18px rgba(15, 23, 42, 0.07);
+  --shadow-md: 0 14px 36px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 24px 54px rgba(15, 23, 42, 0.16);
+  --focus-ring: 3px solid #f59e0b;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Typography Scale (100% Local System Stack — Zero External CDN) */
+  --font-sans: "Plus Jakarta Sans", "Nunito", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: clamp(1.85rem, 3.8vw, 2.75rem);
+  --text-hero: clamp(2.35rem, 4.8vw, 4rem);
+
+  /* Transitions & Z-Index Layers */
+  --transition-fast: 150ms cubic-bezier(0.2, 0, 0, 1);
+  --transition-base: 220ms cubic-bezier(0.2, 0, 0, 1);
+  --z-header: 40;
+  --z-dropdown: 60;
+  --z-modal: 200;
+  --z-toast: 300;
+  --z-drag: 1000;
+}
+
+body[data-theme="garden"] {
+  --blue: #16803d;
+  --blue-hover: #166534;
+  --blue-deep: #14532d;
+  --blue-soft: #dcfce7;
+  --blue-Tint: #f0fdf4;
+  --purple: #4d7c0f;
+  --purple-soft: #ecfccb;
+  --bg: #f6faf5;
+  --surface-muted: #f2f9f1;
+}

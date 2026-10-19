@@ -1,7 +1,7 @@
 import type { PointerEvent } from "react";
 import { ArrowDown, ArrowUp, GripVertical, Trash2 } from "lucide-react";
 import { blockLabels, type Block } from "@/lib/curriculum";
-import { blockClass } from "./BlockPalette";
+import { blockClass } from "./blockStyles";
 export default function BlockWorkspace({
   blocks,
   activeId,
