@@ -1,47 +1,37 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
+import "./tokens.css";
 import "./globals.css";
 import "./redesign.css";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
+import SiteHeader from "@/components/SiteHeader";
+
 export const metadata: Metadata = {
   title: "Atala Lab — Coding for Kids",
-  description: "Belajar coding seru untuk anak SD",
+  description:
+    "Ruang belajar coding visual berbahasa Indonesia bersama Kiko dan Kiki untuk siswa kelas 4 SD.",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="id" data-scroll-behavior="smooth">
       <body>
-        <header className="site-header">
-          <div className="container nav">
-            <Link href="/" className="brand">
-              <Image
-                src="/atala-logo.png"
-                alt="Atala"
-                width={36}
-                height={36}
-                className="brand-logo"
-              />
-              <span>
-                Atala <b>Lab</b>
-              </span>
-            </Link>
-            <div className="nav-right">
-              <nav aria-label="Navigasi utama">
-                <Link href="/">Beranda</Link>
-                <Link href="/proyek">Proyek Saya</Link>
-                <Link href="/catatan">Papan Guru</Link>
-              </nav>
-              <ThemeSwitcher />
-            </div>
-          </div>
-        </header>
-        <main>{children}</main>
+        <a href="#main-content" className="skip-link">
+          Langsung ke isi utama
+        </a>
+        <SiteHeader />
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
         <footer>
-          <div className="container">
-            Atala Lab · Satu blok, banyak kemungkinan.
+          <div className="container footer-inner">
+            <div>
+              <strong>Atala Lab</strong> · Satu blok, banyak kemungkinan bersama
+              Kiko &amp; Kiki.
+            </div>
+            <div className="footer-meta">
+              Belajar coding visual untuk SD · Offline-ready · Tanpa akun
+            </div>
           </div>
         </footer>
       </body>

@@ -9,6 +9,7 @@
     "dev:web": "npm run dev -w @atala/web",
     "dev:api": "npm run dev -w @atala/api",
     "build": "npm run build -w @atala/web && npm run build -w @atala/api",
+    "export:cpanel": "NEXT_PUBLIC_BASE_PATH=/coding-for-kids npm run build -w @atala/web && cd apps/web/out && zip -rq ../../../atala-web-cpanel.zip . -x '*.DS_Store'",
     "test": "npm run test -w @atala/web && npm run test -w @atala/api"
   },
   "devDependencies": {

@@ -1,5 +1,5 @@
 import { blockLabels, type BlockKind } from "@/lib/curriculum";
-import { blockClass } from "./BlockPalette";
+import { blockClass } from "./blockStyles";
 export default function DragGhost({
   kind,
   x,

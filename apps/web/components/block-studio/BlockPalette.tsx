@@ -8,6 +8,7 @@ import {
   Variable,
 } from "lucide-react";
 import { blockLabels, type BlockKind } from "@/lib/curriculum";
+import { blockClass } from "./blockStyles";
 const groups = [
   { id: "events", name: "Peristiwa", icon: Flag, kinds: ["start", "key"] },
   {
@@ -20,18 +21,6 @@ const groups = [
   { id: "control", name: "Aturan", icon: Blocks, kinds: ["repeat", "ifStar"] },
   { id: "variable", name: "Skor", icon: Variable, kinds: ["score"] },
 ] as const;
-export const blockClass: Record<BlockKind, string> = {
-  start: "event",
-  key: "event",
-  move: "motion",
-  left: "motion",
-  right: "motion",
-  say: "looks",
-  wait: "looks",
-  repeat: "control",
-  ifStar: "control",
-  score: "variable",
-};
 export default function BlockPalette({
   onAdd,
   onDrag,

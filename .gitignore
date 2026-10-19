@@ -6,3 +6,6 @@ dist/
 .env.local
 .DS_Store
 .local-dev/
+out/
+apps/web/out/
+*.zip
